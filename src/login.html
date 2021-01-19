@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src=login.js ></script>
+
+</head>
+<body>
+    <div class="topnav">
+        <a href="#user">User Management</a>
+    </div>
+    <div class="sidenav">
+        <ul>
+        <li><a href="#">User</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Profile</a></li>
+        </div>
+        
+        <div class="content">
+            <P>We show the list of users in tabular formate</P>
+            <div class="login-page">
+                <form class="form">
+                       <label for="username">Username</label>
+                       <input type="text" name="username" id="email" placeholder="user name"  >
+
+                       <label for="pass">Password</label>
+                       <input type="password" name="pass" id="pwd" placeholder="password" >
+
+                       <button type="submit" onclick="login()" >Login</button>
+                       
+                       <button type="submit" class="signin" onclick="document.getElementById('signin').style.display='block'" style="width:auto;">Signup</button>
+                       <p class="message"> <a href="#">Forgot password?</a></p>
+                       <div id="signin" class="newpage">
+                       <span onclick="document.getElementById('signin').style.display='none'" class="close" title="Close Webpage">&times;</span>
+                        <form class="form1">
+                            <div class="signup-page">
+                                <span><h1>Sign Up</h1>It's quick and easy </span>
+                                <hr>
+                                <div id="name" >
+                                <input type="text" name="username1" id="email1" placeholder="User name" >
+                                <input type="text" name="lastname" id="last" placeholder=" Lastname" >
+                                </div>
+                                <input type="tel" name="phone" id="mobile" placeholder="Email address">
+                                <input type="password1" name="pass1" id="pwd1" placeholder="New password" >
+                                <input type="password2" name="pass2" id="pwd2" placeholder="confirm password" ><br>
+                                <input type="checkbox" name="checked" id="check">
+                                <label for="isadmin">Is Admin</label><br><br>
+
+                                <label for="date">Date of Birth</label><br>
+                                <select name="days">
+                                    <option value="days">day</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                                <select name="months">
+                                    <option value="months">Month</option>
+                                    <option value="january">january</option>
+                                    <option value="february">february</option>
+                                    <option value="march">March</option>
+                                    <option value="april">April</option>
+                                </select>
+                                    <select name="year">
+                                    <option value="years">Year</option>
+                                    <option value="1995">1995</option>
+                                    <option value="1996">1996</option>
+                                    <option value="1997">1997</option>
+                                    <option value="1998">1998</option>
+                                </select><br><br>
+                                <label for="gender">Gender</label>
+                                <input type="radio" name="gender" value="male" > Male
+                                <input type="radio" name="gender" value="female"checked> Female
+                                <input type="radio" name="gender" value="custom"> Custom <br><br>
+                                <label for="games">Games</label>
+                                <select name="games" >
+                                    <option value="football">Football</option>
+                                    <option value="kabadi">Kabadi</option>
+                                    <option value="cricket">Cricket</option>
+                                </select>
+                                <p>By clicking SIgn Up, you agree to our <a href="#">Terms, Data Policy and Cockie Policy</a>  you may recieve SMS notification from us and can opt out at any time.</p>
+                                <button type="button" class="btn btn-success">Sign Up</button>
+                        
+                            </div>
+                        </form>
+                       
+                    </div>
+                </form>
+            </div>
+        </div>
+       
+    </body>
+</html>
